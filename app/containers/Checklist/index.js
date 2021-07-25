@@ -161,6 +161,7 @@ export function Checklist({todoList, completedList, deletedList, loading, getChe
             className={classes.addButton}
             startIcon={<SaveIcon />}
             onClick={() => handleAdd()}
+            disabled={!todo}
           >
             Add Item
           </Button>
