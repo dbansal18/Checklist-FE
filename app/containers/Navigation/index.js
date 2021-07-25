@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => {
       marginLeft: theme.spacing(2)
     },
     m10: {
-      margin: '10px'
+      // margin: '10px'
     }
   }
 })
