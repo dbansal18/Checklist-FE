@@ -1,0 +1,22 @@
+.spinner-wrapper {
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+}
+
+.MuiLinearProgress-root {
+    position: fixed !important;
+    z-index: 99;
+    width: -webkit-fill-available;
+}
