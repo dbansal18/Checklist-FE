@@ -194,8 +194,8 @@ export function Checklist({todoList, completedList, deletedList, loading, getChe
                           }
                           <ListItemSecondaryAction>
                             {editIndex == index ? (
-                              <IconButton edge="end" aria-label="comments" onClick={() => handleEdit(index)}>
-                                <CheckIcon color="primary"/>
+                              <IconButton edge="end" aria-label="comments" onClick={() => handleEdit(index)} disabled={!editValue}>
+                                <CheckIcon color="primary" disabled={!editValue} />
                               </IconButton>
                             ) : ''}
                             {editIndex == index ? (
