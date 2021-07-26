@@ -17,7 +17,9 @@ export const loadState = () => {
 
 export const saveState = state => {
   try {
-    jwt.sign({state}, JWT_TOKEN_KEY, (err, token) => {
+    jwt.sign({state}, JWT_TOKEN_KEY, {
+        expiresIn: 86400 // 24 hours
+      }, (err, token) => {
       localStorage.setItem('state', token);
     });
   } catch {
